@@ -17,19 +17,22 @@ end
 
 # Print "Sales Report" in ascii art
 
-puts"  #####                                 ######                                   " 
-puts" #     #   ##   #      ######  ####     #     # ###### #####   ####  #####  #####"
-puts" #        #  #  #      #      #         #     # #      #    # #    # #    #   #  "
-puts"  #####  #    # #      #####   ####     ######  #####  #    # #    # #    #   #  "
-puts"       # ###### #      #           #    #   #   #      #####  #    # #####    #  "
-puts" #     # #    # #      #      #    #    #    #  #      #      #    # #   #    #  "
-puts"  #####  #    # ###### ######  ####     #     # ###### #       ####  #    #   #  "
-puts"********************************************************************************"
-
+def sales_report_ascii
+	puts"  #####                                 ######                                   " 
+	puts" #     #   ##   #      ######  ####     #     # ###### #####   ####  #####  #####"
+	puts" #        #  #  #      #      #         #     # #      #    # #    # #    #   #  "
+	puts"  #####  #    # #      #####   ####     ######  #####  #    # #    # #    #   #  "
+	puts"       # ###### #      #           #    #   #   #      #####  #    # #####    #  "
+	puts" #     # #    # #      #      #    #    #    #  #      #      #    # #   #    #  "
+	puts"  #####  #    # ###### ######  ####     #     # ###### #       ####  #    #   #  "
+	puts"********************************************************************************"
+end 
 
 # Print today's date
 
 #!/usr/bin/ruby -w
+
+def current_date
 
 time1 = Time.new
 
@@ -39,7 +42,11 @@ puts "Current Time : " + time1.inspect
 time2 = Time.now
 puts "Current Time : " + time2.inspect
 
+end 
+
 # Print "Products" in ascii art
+
+def products_ascii
 
 puts "                     _            _       "
 puts "                    | |          | |      "
@@ -50,7 +57,15 @@ puts "| .__/|_|  \\___/ \\__,_|\\__,_|\\___|\\__|___/"
 puts "| |                                       "
 puts "|_|        "
 
+end
+
+sales_report_ascii
+current_date
+products_ascii
+
 # For each product in the data set:
+
+
 	# Print the name of the toy
 	# Print the retail price of the toy
 	# Calculate and print the total number of purchases
